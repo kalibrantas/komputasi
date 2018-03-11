@@ -8,6 +8,8 @@ app.controller('MenuController', function ($scope, $http, $sce, $compile) {
         $http.get(content).then(function (res) {
             menu.content = $sce.trustAsHtml(res.data);
 //            $compile( menu.content)($scope);
+            var a= angular.element(document).find(".execute");
+            console.log(a);
             hljs.initHighlightingOnLoad();
         });
     }
