@@ -11,6 +11,22 @@ app.controller('MenuController', function ($scope, $http, $sce, $compile) {
             hljs.initHighlightingOnLoad();
         });
     }
-    menu.coba="coba coba"
+    menu.coba = "coba coba"
     menu.render("content/home.html");
 });
+
+app.directive('ngHtml', ['$compile', function ($compile) {
+    return function (scope, elem, attrs) {
+        console.log(elem)
+        if (attrs.ngHtml) {
+            elem.html(scope.$eval(attrs.ngHtml));
+            $compile(elem.contents())(scope);
+        }
+        scope.$watch(attrs.ngHtml, function (newValue, oldValue) {
+            if (newValue && newValue !== oldValue) {
+                elem.html(newValue);
+                $compile(elem.contents())(scope);
+            }
+        });
+    };
+}]);

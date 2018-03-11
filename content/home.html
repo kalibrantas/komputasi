@@ -19,25 +19,45 @@
 <p>
     Sebagai contoh mari kita demontrasikan seberapa cepat komputer dapat bekerja menggunakan program simple 
 </p>
+<div class="notification is-primary">
+    <label class="label">Iterasi</label>
+    <div class="field is-grouped">
+        <p class="control is-expanded">
+            <input class="input" type="text" placeholder="Jumlah iterasi" value="1000000" id="iterasi">
+        </p>
+        <p class="control">
+            <button class="button is-info" onclick="someFunction()">Run</button>
+        </p>
+    </div>
+</div>
 
-<button onclick="someFunction()">run</button>
-
-<div>{{menu.coba}}</div>
-
-<pre>
-<code class="javascript">
-
-</code>
-</pre>
+<pre><code class="javascript">
+function someFunction() {
+        var iterasi = document.getElementById("iterasi").value
+        var t0 = performance.now()
+        var total = 0;
+        for (var i = 0; i < iterasi; i++) {
+            total++;
+        }
+        var t1 = performance.now()
+        alert((t1 - t0) + " milisecond  denga hasil " + total)
+    }
+</code></pre>
 
 <script>
     function someFunction() {
+        var iterasi = document.getElementById("iterasi").value
         var t0 = performance.now()
         var total = 0;
-        for (var i = 0; i < 2700000000; i++) {
+        for (var i = 0; i < iterasi; i++) {
             total++;
         }
         var t1 = performance.now()
         alert((t1 - t0) + " milisecond  denga hasil " + total)
     }
 </script>
+
+<p>
+    Silahkan mencoba dengan mengganti jumlah iterasi yang diinginkan, 
+    waktu untuk sekali proses tergantung dari kemampuan proses komputer yang digunakan.
+</p>
