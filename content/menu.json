@@ -10,19 +10,36 @@
             ]
         },
         {
-            "menu_label": "Trigonometri",
+            "menu_label": "Pemrogaman matematis",
             "menu_list": [
                 {
-                    "label": "Fungsi trigonometri",
-                    "content": "content/trigonometri.html"
+                    "label": "Operasi matematis",
+                    "content": ""
                 }
             ]
         },
         {
-            "menu_label": "Trigonometri",
+            "menu_label": "Pemrogaman Fisika 2D",
             "menu_list": [
                 {
-                    "label": "Fungsi trigonometri",
+                    "label": "Vektor",
+                    "url": ""
+                },
+                 {
+                    "label": "Grafitasi",
+                    "url": ""
+                },
+                 {
+                    "label": "Momentum",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "menu_label": "",
+            "menu_list": [
+                {
+                    "label": "Fraktal",
                     "url": ""
                 }
             ]
