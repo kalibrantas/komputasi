@@ -14,7 +14,7 @@
             "menu_list": [
                 {
                     "label": "Operasi matematis",
-                    "content": ""
+                    "content": "content/coomingsoon.html"
                 }
             ]
         },
@@ -23,15 +23,15 @@
             "menu_list": [
                 {
                     "label": "Vektor",
-                    "url": ""
+                     "content": "content/coomingsoon.html"
                 },
                  {
                     "label": "Grafitasi",
-                    "url": ""
+                     "content": "content/coomingsoon.html"
                 },
                  {
                     "label": "Momentum",
-                    "url": ""
+                     "content": "content/coomingsoon.html"
                 }
             ]
         },
@@ -40,7 +40,7 @@
             "menu_list": [
                 {
                     "label": "Fraktal",
-                    "url": ""
+                     "content": "content/coomingsoon.html"
                 }
             ]
         }
