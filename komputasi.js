@@ -10,7 +10,7 @@ app.controller('MenuController', function ($scope, $http, $sce, $compile) {
 //            $compile( menu.content)($scope);
             var a= angular.element(document).find(".execute");
             console.log(a);
-            hljs.initHighlightingOnLoad();
+            hljs.initHighlighting();
         });
     }
     menu.coba = "coba coba"
