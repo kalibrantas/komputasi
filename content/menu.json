@@ -1,0 +1,31 @@
+{
+    "menu": [
+        {
+            "menu_label": "General",
+            "menu_list": [
+                {
+                    "label": "Home",
+                    "content": "content/home.html"
+                }
+            ]
+        },
+        {
+            "menu_label": "Trigonometri",
+            "menu_list": [
+                {
+                    "label": "Fungsi trigonometri",
+                    "content": "content/trigonometri.html"
+                }
+            ]
+        },
+        {
+            "menu_label": "Trigonometri",
+            "menu_list": [
+                {
+                    "label": "Fungsi trigonometri",
+                    "url": ""
+                }
+            ]
+        }
+    ]
+}
