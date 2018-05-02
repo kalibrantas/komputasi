@@ -6,6 +6,7 @@ app.controller('MenuController', function ($scope, $http, $sce, $compile) {
     });
     menu.render = function (content) {
         $http.get(content).then(function (res) {
+            $compile(res.data)($scope);
             menu.content = $sce.trustAsHtml(res.data);
             setTimeout(function () {
                 hljs.initHighlighting();
